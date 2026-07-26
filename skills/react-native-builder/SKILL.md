@@ -1,12 +1,13 @@
 ---
 name: react-native-builder
-description: React Native 应用开发：组件、导航、原生模块、Expo 工具链
+description: React Native 组件开发、导航、原生模块、Expo 工具链与性能优化
 source:
-  type: original
+  type: derived
   repo: skills-repo/mobile-developer
   path: skills/react-native-builder/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/google-labs-code/stitch-skills/stitch::react-components
 metadata:
   category: 跨平台
   platform: Mobile
@@ -19,11 +20,11 @@ metadata:
 
 ## 能力
 
-- **组件开发**：核心组件使用、自定义组件、样式系统（StyleSheet/Styled Components）
-- **导航**：React Navigation 栈/标签/抽屉导航、深层链接
-- **Expo 工具链**：Expo SDK、EAS Build、OTA 更新
-- **原生模块**：原生模块桥接、第三方原生库集成
-- **性能优化**：FlatList 优化、图片缓存、JS 线程优化
+- **组件开发**：核心组件（View/Text/Image/ScrollView）、自定义组件、StyleSheet 样式系统
+- **导航**：React Navigation 栈/标签/抽屉导航、深层链接配置
+- **Expo 工具链**：Expo SDK、EAS Build、OTA 更新、expo-dev-client
+- **原生模块**：原生模块桥接模式、第三方原生库集成
+- **性能优化**：FlatList 优化（getItemLayout、windowSize）、图片缓存、JS 线程优化
 
 ## 使用方式
 
@@ -52,4 +53,4 @@ metadata:
 
 - 不涉及原生 iOS/Android 完整开发（仅桥接层面）
 - 不涉及 React Native 新架构（Fabric/TurboModules）深度定制
-- 复杂动画建议配合 design-studio 使用
+- 复杂动画建议配合 design-studio 的 motion-design

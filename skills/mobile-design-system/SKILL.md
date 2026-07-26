@@ -1,12 +1,13 @@
 ---
 name: mobile-design-system
-description: 移动端设计规范：平台适配、触控交互、手势、动效、无障碍
+description: 移动端设计规范：触控优先、平台尊重、电池友好、离线可用
 source:
-  type: original
+  type: derived
   repo: skills-repo/mobile-developer
   path: skills/mobile-design-system/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/sickn33/antigravity-awesome-skills/mobile-design
 metadata:
   category: 设计
   platform: Mobile
@@ -15,41 +16,41 @@ metadata:
 
 # 移动端设计规范
 
-> 为移动应用制定和实现设计规范，覆盖 iOS/Android 平台差异、触控交互、手势和动效。
+> 触控优先、平台尊重、电池友好。移动端不是缩小版桌面——先考虑约束，再考虑美学。
 
 ## 能力
 
-- **平台适配**：Material Design 3 vs Human Interface Guidelines 差异对照
-- **触控交互**：点击区域、手势冲突、触觉反馈（Haptics）
-- **手势设计**：滑动、长按、捏合、拖拽的手势规范与实现
-- **动效设计**：转场动画、微交互、加载状态、骨架屏
-- **无障碍设计**：色彩对比度、可缩放文字、屏幕阅读器适配
+- **移动可行性评估（MFRI）**：平台清晰度、交互复杂度、性能风险、离线依赖、无障碍风险五维评分
+- **触控优先设计**：44pt 最小触控目标、手势冲突处理、拇指热区
+- **平台尊重**：iOS HIG vs Material Design 3 差异对照，不跨平台混用 UI 模式
+- **电池友好**：暗色模式适配、减少不必要的动画和轮询
+- **离线可用**：离线状态 UI 提示、本地缓存策略、同步冲突处理
 
 ## 使用方式
 
 ```
-/mobile-design-system 为我的应用制定一套移动端设计规范
-/mobile-design-system 这个页面在 iOS 和 Android 上表现不一致，帮我统一
-/mobile-design-system 设计一个符合 HIG 的下拉刷新动效
+/mobile-design-system 为我的应用做移动可行性评估
+/mobile-design-system 这个页面在 iOS 和 Android 上表现不一致，帮我统一平台差异
+/mobile-design-system 审查这个设计方案的触控可达性
 ```
 
 ## 工作流
 
 1. 描述应用类型和目标用户群
-2. AI 分析 iOS/Android 平台差异需求
-3. 生成设计规范文档（色彩/字体/间距/圆角/阴影）
-4. 输出关键交互的动效规格（时长/曲线/触发条件）
-5. 提供无障碍检查清单
+2. 运行 MFRI 五维评分，识别风险点
+3. 分析 iOS/Android 平台差异需求
+4. 输出触控、导航、反馈的设计建议
+5. 检查离线和无障碍兼容性
 
 ## 适用场景
 
-- 从零建立移动端设计规范
+- 新应用移动端设计评审
 - iOS/Android 平台一致性审查
-- 手势交互方案设计
-- 动效规范制定
+- 触控交互方案设计
+- 移动端无障碍合规检查
 
 ## 限制
 
 - 不涉及设计工具（Figma/Sketch）的具体操作
 - 不涉及品牌视觉设计（Logo/插画/品牌色）
-- 复杂动效实现建议配合 flutter-builder 或 react-native-builder
+- 复杂动效实现建议配合 design-studio 的 motion-design

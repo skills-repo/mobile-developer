@@ -1,55 +1,58 @@
 ---
 name: ios-developer
-description: iOS 原生开发：SwiftUI 布局、数据持久化、辅助功能、性能调优
+description: SwiftUI 布局与组件：Stack/Grid/List/ScrollView、Form、Searchable、Overlay
 source:
-  type: original
+  type: derived
   repo: skills-repo/mobile-developer
   path: skills/ios-developer/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/dpearson2699/swift-ios-skills/swiftui-layout-components
 metadata:
   category: 原生开发
   platform: iOS
   difficulty: 进阶
 ---
 
-# iOS 原生开发
+# SwiftUI 布局与组件
 
-> 使用 Swift 和 SwiftUI 构建 iOS 原生应用，覆盖布局、数据持久化、辅助功能和性能调优。
+> 使用 SwiftUI 构建 iOS 原生界面，覆盖布局、列表、表单、搜索和浮层模式。目标 iOS 17+。
 
 ## 能力
 
-- **SwiftUI 布局**：View 组合、Modifier 链、List/Grid 容器
-- **数据持久化**：Core Data、SwiftData、UserDefaults、文件存储
-- **网络层**：URLSession、Async/Await 网络请求、数据模型映射
-- **辅助功能**：VoiceOver 适配、动态字体、对比度、可访问性标签
-- **性能调优**：主线程优化、内存管理、启动时间分析
+- **Stack 布局**：VStack/HStack/ZStack 用于小规模固定内容
+- **Lazy 布局**：LazyVStack/LazyHStack 在 ScrollView 中按需渲染大量数据
+- **Grid 布局**：LazyVGrid/LazyHGrid 实现自适应网格
+- **List 模式**：Section、swipeActions、selection、下拉刷新
+- **ScrollView**：ScrollPosition 跟踪、滚动驱动动画
+- **Form 与控件**：表单验证、Toggle/Picker/Slider、.searchable 修饰符
+- **Overlay 浮层**：sheet、popover、自定义浮层组件
 
 ## 使用方式
 
 ```
-/ios-developer 帮我设计一个 SwiftUI 列表页面的数据模型和视图
-/ios-developer 检查这个页面的辅助功能是否达标
-/ios-developer 分析这个 View 的性能瓶颈
+/ios-developer 帮我设计一个设置页面的 SwiftUI Form 布局
+/ios-developer 这个列表有 1000 条数据，帮我改成 LazyVStack 优化性能
+/ios-developer 实现一个带搜索和 swipe 操作的列表页
 ```
 
 ## 工作流
 
 1. 描述页面功能和数据需求
-2. AI 设计 SwiftUI View 结构和数据流
-3. 选择合适的持久化方案
-4. 实现辅助功能标注
-5. 性能审查和 Instruments 分析建议
+2. AI 选择合适的布局容器（Stack/List/Grid/ScrollView）
+3. 设计数据流和状态管理
+4. 实现搜索、导航和交互
+5. 检查常见错误（ScrollView 内非 lazy stack、缺少 id 等）
 
 ## 适用场景
 
 - SwiftUI 页面从零搭建
-- Core Data / SwiftData 数据模型设计
-- 辅助功能合规审查
-- 启动时间和渲染性能优化
+- 列表性能优化（非 lazy → lazy）
+- Form 表单和设置页面
+- 搜索界面和浮层交互
 
 ## 限制
 
-- 不涉及 UIKit 深度集成（仅桥接层面）
+- 不涉及 UIKit 深度集成
+- 不涉及 Core Data / SwiftData 数据持久化
 - 不涉及 App Store 审核流程
-- 不涉及 Siri/Widget/Watch 等扩展开发

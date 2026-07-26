@@ -1,55 +1,56 @@
 ---
 name: flutter-builder
-description: Flutter 应用开发：Widget 构建、状态管理、响应式布局、测试
+description: Flutter 分层架构（UI/Logic/Data）、MVVM 模式、项目结构、响应式布局
 source:
-  type: original
+  type: derived
   repo: skills-repo/mobile-developer
   path: skills/flutter-builder/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/flutter/skills/flutter-apply-architecture-best-practices
 metadata:
   category: 跨平台
   platform: Mobile
-  difficulty: 入门
+  difficulty: 进阶
 ---
 
-# Flutter 应用开发
+# Flutter 架构与布局
 
-> 使用 Flutter 框架构建跨平台移动应用，覆盖 Widget 构建、状态管理、响应式布局和测试。
+> 使用 Flutter 推荐的分层架构（UI/Logic/Data）和响应式布局模式构建可扩展的跨平台应用。
 
 ## 能力
 
-- **Widget 构建**：Material Design 3 组件、自定义 Widget、组件组合
-- **状态管理**：Provider、Riverpod、Bloc 模式选择与实现
-- **响应式布局**：LayoutBuilder、MediaQuery、多屏幕适配
-- **导航路由**：GoRouter 声明式路由、深层链接
-- **测试**：Widget 测试、集成测试、Golden 测试
+- **分层架构**：UI 层（MVVM）、Logic 层（UseCase）、Data 层（Repository/Service）分离
+- **响应式布局**：LayoutBuilder + constraints.maxWidth 自适应，不锁屏幕方向
+- **项目结构**：按功能分组的 UI + 按类型分组的 Data/Domain 混合组织
+- **状态管理**：ViewModel 继承 ChangeNotifier，暴露不可变状态快照
+- **大屏优化**：ConstrainedBox 限制宽度、Expanded/Flexible 分配空间、ListView.builder 懒渲染
 
 ## 使用方式
 
 ```
-/flutter-builder 为我的记账应用设计 Widget 树结构
-/flutter-builder 这个页面需要同时适配手机和平板，帮我写响应式布局
-/flutter-builder 对比 Provider 和 Riverpod 哪个更适合我的项目
+/flutter-builder 为我的应用设计分层架构和项目目录结构
+/flutter-builder 这个页面需要适配手机和平板，帮我写响应式布局
+/flutter-builder 重构这个 Widget，把业务逻辑从 UI 层抽到 ViewModel
 ```
 
 ## 工作流
 
-1. 描述应用功能需求和目标平台
-2. AI 设计 Widget 树和组件拆分方案
-3. 选择合适的状态管理方案
-4. 实现响应式布局，覆盖目标屏幕尺寸
-5. 生成 Widget 测试和集成测试
+1. 识别需要自适应行为的 Widget
+2. 用 LayoutBuilder 包裹，提取 constraints.maxWidth
+3. 定义断点（如 largeScreenMinWidth = 600）
+4. maxWidth > 断点 → 返回大屏布局（Row + 侧栏）
+5. maxWidth ≤ 断点 → 返回小屏布局（Column 或标准导航）
 
 ## 适用场景
 
-- 从零搭建 Flutter 项目
-- 已有页面需要重构 Widget 结构
-- 手机→平板多屏幕适配
-- 状态管理方案选型和迁移
+- 新 Flutter 项目架构搭建
+- 已有项目重构为分层架构
+- 手机→平板→桌面多屏幕适配
+- ViewModel/Repository 模式迁移
 
 ## 限制
 
 - 不涉及 Flutter 引擎和原生插件开发
 - 不涉及设计稿到代码的自动转换
-- 复杂动画建议配合 design-studio 使用
+- 复杂动画建议配合 design-studio 的 motion-design
