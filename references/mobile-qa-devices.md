@@ -75,13 +75,13 @@ appId: com.example.app
 | 内存压力下被杀 | 模拟器内存大 | 低端机开多个 App 再回来，确认状态恢复 |
 | 折叠 / 旋转 | 模拟器尺寸固定 | 真机旋转 + 折叠屏开合，看布局不崩 |
 | 通知 / 深链 | 模拟器受限 | 点推送 / 通用链接拉起指定页 |
-| 触控热区 | 鼠标点击精准 | 手指粗触点，确认 44pt 目标够大（见 mobile-design-system） |
+| 触控热区 | 鼠标点击精准 | 手指粗触点，确认 44pt 目标够大（见 skills/mobile-design-system） |
 | 冷启动白屏 | 模拟器已热 | 清后台后首次打开，看首屏时机 |
 
 ## 4. 典型坑与规避
 
 - **坑：只测主力机型，低端机首屏 8 秒被弃**。*规避*：低端机纳入必测，
-  用 `mobile-performance.md` 的降采样/虚拟化手段压首屏。
+  用 `references/mobile-performance.md` 的降采样/虚拟化手段压首屏。
 - **坑：权限被拒后功能永久不可用**。*规避*：所有权限请求配"被拒引导"，
   跳设置页的重试用文案；不静默失败。
 - **坑：横竖屏状态丢失**。*规避*：ViewModel/State 持久化 + `onSaveInstanceState`，
@@ -98,7 +98,7 @@ appId: com.example.app
 - [ ] 真机权限弹窗时序验证，被拒有引导
 - [ ] 弱网/断网降级路径验证
 - [ ] 旋转/折叠/深链/通知拉起验证
-- [ ] 低端机冷启动与内存压测达标（指标见 mobile-performance.md）
+- [ ] 低端机冷启动与内存压测达标（指标见 references/mobile-performance.md）
 - [ ] 深浅色主题切后可读性与对比度复核
 - [ ] 崩溃监控（Sentry/Firebase）已接，发布后看崩溃率曲线
 
@@ -121,7 +121,7 @@ appId: com.example.app
 - **动态字体**：iOS 开 "更大字体"、Android 开 "字体大小最大"，确认布局不溢出/不截断
 - **VoiceOver / TalkBack**：开启后走核心流程，确认焦点顺序合理、标签非空
 - **对比度**：正文 ≥4.5:1，大文本 ≥3:1（用对比度工具核）
-- **触控目标**：所有可点元素 ≥44×44pt（iOS）/ 48×48dp（Android），见 mobile-design-system
+- **触控目标**：所有可点元素 ≥44×44pt（iOS）/ 48×48dp（Android），见 skills/mobile-design-system
 - **减少动态**：开启 "减少动态效果" 后，动画降级但不影响功能（见 animation 类技能）
 
 ## 8. 一条完整 Maestro 冒烟流（示例）
@@ -152,7 +152,7 @@ appId: com.example.app
 - [ ] 真机冒烟（§8 流程）在提审前跑一次
 - [ ] 弱网/断网/旋转/权限被拒 四类边界用例有对应测试或手动清单
 - [ ] 无障碍四项（§7）在真机过一遍
-- [ ] 发布后崩溃率看板有基线对比，异常即回滚（见 mobile-release.md §9）
+- [ ] 发布后崩溃率看板有基线对比，异常即回滚（见 references/mobile-release.md §9）
 
 ## 10. 碎片化专项（最易漏的兼容性点）
 
