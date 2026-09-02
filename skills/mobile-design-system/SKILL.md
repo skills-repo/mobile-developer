@@ -54,3 +54,11 @@ metadata:
 - 不涉及设计工具（Figma/Sketch）的具体操作
 - 不涉及品牌视觉设计（Logo/插画/品牌色）
 - 复杂动效实现建议配合 design-studio 的 motion-design
+
+## 相关参考（Playbook）
+
+本子技能落地"移动端设计原则"，与之配合的跨栈方法论见下列 `references/`（按需读取）：
+
+- 平台尊重与选型中的设计语言策略：`references/decision-cross-platform.md`（§4 跨平台混用坑、§5 收口清单）
+- 电池友好与暗色模式实现：`references/mobile-performance.md`（§3 电池友好硬性规则）
+- 触控热区与无障碍 QA 真机核查：`references/mobile-qa-devices.md`（§3 真机必查清单、§7 无障碍 QA）

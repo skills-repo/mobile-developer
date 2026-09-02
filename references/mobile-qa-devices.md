@@ -66,6 +66,8 @@ appId: com.example.app
 - assertVisible: "欢迎"
 ```
 
+各栈测试命令对应的子技能：`skills/flutter-builder/SKILL.md`、`skills/react-native-builder/SKILL.md`、`skills/ios-developer/SKILL.md`；触控 / 无障碍真机核查另见 `skills/mobile-design-system/SKILL.md`。
+
 ## 3. 真机必查清单（模拟器测不出）
 
 | 检查项 | 为什么模拟器测不出 | 验证方式 |

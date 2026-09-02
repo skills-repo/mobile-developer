@@ -3,6 +3,9 @@
 > 子技能各自负责"开发态"，但把代码变成商店里能装的包，是另一条独立链路：
 > 签名、构建变体、商店元数据、审核避坑。本篇是跨栈的发布 playbook，
 > 把一次"从 commit 到上架"的可重复流程固化下来。
+>
+> 本篇的构建 / 签名命令对应三个栈子技能的开发产出：
+> `skills/flutter-builder/SKILL.md`、`skills/react-native-builder/SKILL.md`、`skills/ios-developer/SKILL.md`。
 
 ## 1. 发布流水线总览
 

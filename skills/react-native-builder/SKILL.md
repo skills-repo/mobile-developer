@@ -54,3 +54,12 @@ metadata:
 - 不涉及原生 iOS/Android 完整开发（仅桥接层面）
 - 不涉及 React Native 新架构（Fabric/TurboModules）深度定制
 - 复杂动画建议配合 design-studio 的 motion-design
+
+## 相关参考（Playbook）
+
+本子技能落地"怎么写 React Native"，跨栈方法论见下列 `references/`（按需读取）：
+
+- 为何选 RN / 桥接成本评估：`references/decision-cross-platform.md`（§1 Q1、§4 桥接坑）
+- RN 性能（FlatList / Hermes）：`references/mobile-performance.md`（§2 React Native 段、§4 典型坑）
+- RN 出包与 EAS / CodePush：`references/mobile-release.md`（§2 Android 构建、§8 回滚）
+- RN 真机 Detox / Maestro 测试：`references/mobile-qa-devices.md`（§2 React Native 测试命令）
