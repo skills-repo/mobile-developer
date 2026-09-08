@@ -5,7 +5,7 @@
 > 把一次"从 commit 到上架"的可重复流程固化下来。
 >
 > 本篇的构建 / 签名命令对应三个栈子技能的开发产出：
-> `skills/flutter-builder/SKILL.md`、`skills/react-native-builder/SKILL.md`、`skills/ios-developer/SKILL.md`。
+> [skills/flutter-builder/SKILL.md](../skills/flutter-builder/SKILL.md)、[skills/react-native-builder/SKILL.md](../skills/react-native-builder/SKILL.md)、[skills/ios-developer/SKILL.md](../skills/ios-developer/SKILL.md)。
 
 ## 1. 发布流水线总览
 

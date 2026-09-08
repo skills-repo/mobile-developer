@@ -37,7 +37,7 @@ Agent 在以下场景加载本文件：
 - 所有技能面向独立开发者/小团队，不涉及企业级移动端架构
 - 优先推荐跨平台方案（Flutter/React Native），iOS 原生作为补充
 - 移动端设计需同时考虑 iOS 和 Android 平台差异
-- 选型类问题先读 `references/decision-cross-platform.md` 用决策树论证，再落地
+- 选型类问题先读 [references/decision-cross-platform.md](references/decision-cross-platform.md) 用决策树论证，再落地
 - 性能/发布/QA 类问题先读对应 `references/` playbook，再调子技能
 
 ## 不做什么

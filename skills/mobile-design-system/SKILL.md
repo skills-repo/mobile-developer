@@ -59,6 +59,6 @@ metadata:
 
 本子技能落地"移动端设计原则"，与之配合的跨栈方法论见下列 `references/`（按需读取）：
 
-- 平台尊重与选型中的设计语言策略：`references/decision-cross-platform.md`（§4 跨平台混用坑、§5 收口清单）
-- 电池友好与暗色模式实现：`references/mobile-performance.md`（§3 电池友好硬性规则）
-- 触控热区与无障碍 QA 真机核查：`references/mobile-qa-devices.md`（§3 真机必查清单、§7 无障碍 QA）
+- 平台尊重与选型中的设计语言策略：[references/decision-cross-platform.md](../../references/decision-cross-platform.md)（§4 跨平台混用坑、§5 收口清单）
+- 电池友好与暗色模式实现：[references/mobile-performance.md](../../references/mobile-performance.md)（§3 电池友好硬性规则）
+- 触控热区与无障碍 QA 真机核查：[references/mobile-qa-devices.md](../../references/mobile-qa-devices.md)（§3 真机必查清单、§7 无障碍 QA）

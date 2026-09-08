@@ -59,7 +59,7 @@ metadata:
 
 本子技能落地"怎么写 React Native"，跨栈方法论见下列 `references/`（按需读取）：
 
-- 为何选 RN / 桥接成本评估：`references/decision-cross-platform.md`（§1 Q1、§4 桥接坑）
-- RN 性能（FlatList / Hermes）：`references/mobile-performance.md`（§2 React Native 段、§4 典型坑）
-- RN 出包与 EAS / CodePush：`references/mobile-release.md`（§2 Android 构建、§8 回滚）
-- RN 真机 Detox / Maestro 测试：`references/mobile-qa-devices.md`（§2 React Native 测试命令）
+- 为何选 RN / 桥接成本评估：[references/decision-cross-platform.md](../../references/decision-cross-platform.md)（§1 Q1、§4 桥接坑）
+- RN 性能（FlatList / Hermes）：[references/mobile-performance.md](../../references/mobile-performance.md)（§2 React Native 段、§4 典型坑）
+- RN 出包与 EAS / CodePush：[references/mobile-release.md](../../references/mobile-release.md)（§2 Android 构建、§8 回滚）
+- RN 真机 Detox / Maestro 测试：[references/mobile-qa-devices.md](../../references/mobile-qa-devices.md)（§2 React Native 测试命令）

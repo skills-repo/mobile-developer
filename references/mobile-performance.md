@@ -107,7 +107,7 @@ adb shell dumpsys batterystats > /tmp/battery.txt
 - [ ] 电池：无 30s 轮询、无定位泄漏、暗色模式已适配
 - [ ] 包体积在阈值内，超标的依赖已做拆分或动态下发
 - [ ] 改动后重测，数字确认下降（不是"感觉快了"）
-- [ ] 详细命令见 `skills/flutter-builder/SKILL.md`、`skills/react-native-builder/SKILL.md`、`skills/ios-developer/SKILL.md`、`skills/mobile-design-system/SKILL.md`（电池友好见 §3）
+- [ ] 详细命令见 [skills/flutter-builder/SKILL.md](../skills/flutter-builder/SKILL.md)、[skills/react-native-builder/SKILL.md](../skills/react-native-builder/SKILL.md)、[skills/ios-developer/SKILL.md](../skills/ios-developer/SKILL.md)、[skills/mobile-design-system/SKILL.md](../skills/mobile-design-system/SKILL.md)（电池友好见 §3）
 
 ## 6. 内存分析实操（排查 OOM）
 

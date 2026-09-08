@@ -81,12 +81,12 @@ Platform Channel），验证可行后再决定是否整段迁移，不要一次�
 
 ## 6. 与子技能的衔接
 
-- 选定 Flutter → 调 `skills/flutter-builder/SKILL.md`（分层架构 / 响应式布局）
-- 选定 RN → 调 `skills/react-native-builder/SKILL.md`（导航 / Expo / 原生桥接）
-- 仅 iOS 原生 → 调 `skills/ios-developer/SKILL.md`（SwiftUI 布局组件）
-- 任何栈都要 → 调 `skills/mobile-design-system/SKILL.md`（触控优先 / 平台尊重 / 电池友好）
-- 性能落地 → 见 `references/mobile-performance.md`
-- 发布落地 → 见 `references/mobile-release.md`
+- 选定 Flutter → 调 [skills/flutter-builder/SKILL.md](../skills/flutter-builder/SKILL.md)（分层架构 / 响应式布局）
+- 选定 RN → 调 [skills/react-native-builder/SKILL.md](../skills/react-native-builder/SKILL.md)（导航 / Expo / 原生桥接）
+- 仅 iOS 原生 → 调 [skills/ios-developer/SKILL.md](../skills/ios-developer/SKILL.md)（SwiftUI 布局组件）
+- 任何栈都要 → 调 [skills/mobile-design-system/SKILL.md](../skills/mobile-design-system/SKILL.md)（触控优先 / 平台尊重 / 电池友好）
+- 性能落地 → 见 [references/mobile-performance.md](mobile-performance.md)
+- 发布落地 → 见 [references/mobile-release.md](mobile-release.md)
 
 ## 7. 团队技能 → 栈映射表
 

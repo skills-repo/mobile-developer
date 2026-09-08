@@ -59,7 +59,7 @@ metadata:
 
 本子技能落地"怎么写 Flutter"，跨栈方法论见下列 `references/`（按需读取，避免一次性占满上下文）：
 
-- 为何选 Flutter / 何时回退原生：`references/decision-cross-platform.md`（§1 决策树、§3 回退信号）
-- Flutter 性能与包体积优化命令：`references/mobile-performance.md`（§2 Flutter 段、§8 包体积瘦身）
-- Flutter 出包与签名（CI）：`references/mobile-release.md`（§2 iOS/Android 构建、§4 审核避坑）
-- Flutter 真机测试与设备矩阵：`references/mobile-qa-devices.md`（§2 Flutter 测试命令、§3 真机必查）
+- 为何选 Flutter / 何时回退原生：[references/decision-cross-platform.md](../../references/decision-cross-platform.md)（§1 决策树、§3 回退信号）
+- Flutter 性能与包体积优化命令：[references/mobile-performance.md](../../references/mobile-performance.md)（§2 Flutter 段、§8 包体积瘦身）
+- Flutter 出包与签名（CI）：[references/mobile-release.md](../../references/mobile-release.md)（§2 iOS/Android 构建、§4 审核避坑）
+- Flutter 真机测试与设备矩阵：[references/mobile-qa-devices.md](../../references/mobile-qa-devices.md)（§2 Flutter 测试命令、§3 真机必查）

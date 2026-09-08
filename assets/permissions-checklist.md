@@ -1,7 +1,7 @@
 # 移动端权限与隐私检查清单（Permissions & Privacy Checklist）
 
 > 上线前逐条过。权限是商店审核高频拒因，也是用户信任的第一道门槛。
-> 可配合 `scripts/check_permissions.py` 自动校验声明文件（见下方「脚本自检」）。
+> 可配合 [scripts/check_permissions.py](../scripts/check_permissions.py) 自动校验声明文件（见下方「脚本自检」）。
 
 ## 一、通用原则
 
@@ -40,9 +40,9 @@ python3 scripts/check_permissions.py \
 ```
 
 - [ ] 自检 0 error（模板已内置为 0 error 范例）
-- [ ] 把 `assets/android-manifest-template.xml` 换成你项目的 `AndroidManifest.xml` 重跑
-- [ ] 把 `assets/ios-info-plist-template.plist` 换成你项目的 `Info.plist` 重跑
-- [ ] 按项目真实能力调整 `assets/permissions-spec.json` 的 allow/deny/required 清单
+- [ ] 把 [assets/android-manifest-template.xml](android-manifest-template.xml) 换成你项目的 `AndroidManifest.xml` 重跑
+- [ ] 把 [assets/ios-info-plist-template.plist](ios-info-plist-template.plist) 换成你项目的 `Info.plist` 重跑
+- [ ] 按项目真实能力调整 [assets/permissions-spec.json](permissions-spec.json) 的 allow/deny/required 清单
 
 ## 五、发布前回顾
 

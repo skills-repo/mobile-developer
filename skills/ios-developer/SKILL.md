@@ -61,7 +61,7 @@ metadata:
 
 本子技能落地"怎么写 SwiftUI"，跨栈方法论见下列 `references/`（按需读取）：
 
-- 何时选原生 iOS / 系统能力取舍：`references/decision-cross-platform.md`（§1 Q0、§3 回退信号）
-- SwiftUI 性能（LazyVStack / 主线程）：`references/mobile-performance.md`（§2 iOS 段、§7 帧率定位）
-- iOS 签名与上架 TestFlight：`references/mobile-release.md`（§2 iOS 构建、§8 分阶段发布）
-- iOS 真机 XCTest 与设备矩阵：`references/mobile-qa-devices.md`（§2 iOS/原生 测试命令、§7 无障碍 QA）
+- 何时选原生 iOS / 系统能力取舍：[references/decision-cross-platform.md](../../references/decision-cross-platform.md)（§1 Q0、§3 回退信号）
+- SwiftUI 性能（LazyVStack / 主线程）：[references/mobile-performance.md](../../references/mobile-performance.md)（§2 iOS 段、§7 帧率定位）
+- iOS 签名与上架 TestFlight：[references/mobile-release.md](../../references/mobile-release.md)（§2 iOS 构建、§8 分阶段发布）
+- iOS 真机 XCTest 与设备矩阵：[references/mobile-qa-devices.md](../../references/mobile-qa-devices.md)（§2 iOS/原生 测试命令、§7 无障碍 QA）

@@ -66,7 +66,7 @@ appId: com.example.app
 - assertVisible: "欢迎"
 ```
 
-各栈测试命令对应的子技能：`skills/flutter-builder/SKILL.md`、`skills/react-native-builder/SKILL.md`、`skills/ios-developer/SKILL.md`；触控 / 无障碍真机核查另见 `skills/mobile-design-system/SKILL.md`。
+各栈测试命令对应的子技能：[skills/flutter-builder/SKILL.md](../skills/flutter-builder/SKILL.md)、[skills/react-native-builder/SKILL.md](../skills/react-native-builder/SKILL.md)、[skills/ios-developer/SKILL.md](../skills/ios-developer/SKILL.md)；触控 / 无障碍真机核查另见 [skills/mobile-design-system/SKILL.md](../skills/mobile-design-system/SKILL.md)。
 
 ## 3. 真机必查清单（模拟器测不出）
 
@@ -83,7 +83,7 @@ appId: com.example.app
 ## 4. 典型坑与规避
 
 - **坑：只测主力机型，低端机首屏 8 秒被弃**。*规避*：低端机纳入必测，
-  用 `references/mobile-performance.md` 的降采样/虚拟化手段压首屏。
+  用 [references/mobile-performance.md](mobile-performance.md) 的降采样/虚拟化手段压首屏。
 - **坑：权限被拒后功能永久不可用**。*规避*：所有权限请求配"被拒引导"，
   跳设置页的重试用文案；不静默失败。
 - **坑：横竖屏状态丢失**。*规避*：ViewModel/State 持久化 + `onSaveInstanceState`，

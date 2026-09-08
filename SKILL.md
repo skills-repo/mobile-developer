@@ -35,14 +35,14 @@ metadata:
 
 | 任务 | 读取 / 调用 | 关键词（grep 线索） |
 |------|------------|---------------------|
-| 跨平台与原生选型决策（决策树 + 矩阵 + 回退） | `references/decision-cross-platform.md` | 选型, 跨平台, Flutter, React Native, 原生, 回退 |
-| 性能与电池优化（帧率/内存/包体积/电量） | `references/mobile-performance.md` | 性能, 帧率, 内存, 电池, 包体积, 冷启动 |
-| 发布与 CI 工作流（签名/商店/审核/灰度） | `references/mobile-release.md` | 发布, 上架, 签名, TestFlight, 审核, 灰度 |
-| 设备矩阵与真机 QA（E2E/权限/碎片化） | `references/mobile-qa-devices.md` | QA, 真机, 设备矩阵, E2E, 权限时序, 碎片化 |
-| Flutter 分层架构与响应式布局（细粒度调用） | `skills/flutter-builder/SKILL.md` | flutter, MVVM, 响应式, Widget, 分层, 大屏 |
-| React Native 组件/导航/Expo/原生桥接（细粒度调用） | `skills/react-native-builder/SKILL.md` | react-native, FlatList, Expo, 导航, 桥接, Hermes |
-| SwiftUI 布局与组件（细粒度调用） | `skills/ios-developer/SKILL.md` | swiftui, Stack, LazyVGrid, Form, Overlay, iOS17 |
-| 移动端设计规范（细粒度调用） | `skills/mobile-design-system/SKILL.md` | 触控, 平台尊重, 电池友好, 离线, 无障碍, MFRI |
+| 跨平台与原生选型决策（决策树 + 矩阵 + 回退） | [references/decision-cross-platform.md](references/decision-cross-platform.md) | 选型, 跨平台, Flutter, React Native, 原生, 回退 |
+| 性能与电池优化（帧率/内存/包体积/电量） | [references/mobile-performance.md](references/mobile-performance.md) | 性能, 帧率, 内存, 电池, 包体积, 冷启动 |
+| 发布与 CI 工作流（签名/商店/审核/灰度） | [references/mobile-release.md](references/mobile-release.md) | 发布, 上架, 签名, TestFlight, 审核, 灰度 |
+| 设备矩阵与真机 QA（E2E/权限/碎片化） | [references/mobile-qa-devices.md](references/mobile-qa-devices.md) | QA, 真机, 设备矩阵, E2E, 权限时序, 碎片化 |
+| Flutter 分层架构与响应式布局（细粒度调用） | [skills/flutter-builder/SKILL.md](skills/flutter-builder/SKILL.md) | flutter, MVVM, 响应式, Widget, 分层, 大屏 |
+| React Native 组件/导航/Expo/原生桥接（细粒度调用） | [skills/react-native-builder/SKILL.md](skills/react-native-builder/SKILL.md) | react-native, FlatList, Expo, 导航, 桥接, Hermes |
+| SwiftUI 布局与组件（细粒度调用） | [skills/ios-developer/SKILL.md](skills/ios-developer/SKILL.md) | swiftui, Stack, LazyVGrid, Form, Overlay, iOS17 |
+| 移动端设计规范（细粒度调用） | [skills/mobile-design-system/SKILL.md](skills/mobile-design-system/SKILL.md) | 触控, 平台尊重, 电池友好, 离线, 无障碍, MFRI |
 
 > 路由规则：先判断任务属于「选型 / 性能 / 发布 / QA」哪类方法论 → 读 `references/`；要落地某个具体栈的写法 → 直接调 `skills/` 对应子技能。
 
@@ -64,10 +64,10 @@ python3 scripts/check_dep_dupes.py --package-json package.json --pubspec pubspec
 
 `assets/` 提供可直接套用的配置与模板：
 
-- `assets/permissions-spec.json` — 权限基线规范（含 `_` 注释键，驱动 check_permissions.py）
-- `assets/android-manifest-template.xml` — Android 权限清单模板（脚本自检 0 错误）
-- `assets/ios-info-plist-template.plist` — iOS 用途描述模板（脚本自检 0 错误）
-- `assets/permissions-checklist.md` — 移动端权限与隐私上线检查清单
+- [assets/permissions-spec.json](assets/permissions-spec.json) — 权限基线规范（含 `_` 注释键，驱动 check_permissions.py）
+- [assets/android-manifest-template.xml](assets/android-manifest-template.xml) — Android 权限清单模板（脚本自检 0 错误）
+- [assets/ios-info-plist-template.plist](assets/ios-info-plist-template.plist) — iOS 用途描述模板（脚本自检 0 错误）
+- [assets/permissions-checklist.md](assets/permissions-checklist.md) — 移动端权限与隐私上线检查清单
 
 ## 核心原则（始终遵循）
 
